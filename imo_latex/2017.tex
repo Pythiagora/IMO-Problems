@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+\title{IMO 2017}
+\date{}
+\begin{document}
+\maketitle
+
+\textbf{Problem 1.}
+For each integer $a_0 > 1$, define the sequence $a_0, a_1, a_2, \ldots$ by:
+\[
+a_{n+1} = \begin{cases} \sqrt{a_n} & \text{if } \sqrt{a_n} \text{ is an integer,} \\ a_n + 3 & \text{otherwise,} \end{cases} \quad \text{for each } n \geq 0.
+\]
+Determine all values of $a_0$ for which there is a number $A$ such that $a_n = A$ for infinitely many values of $n$.
+
+\bigskip
+
+\textbf{Problem 2.}
+Let $\mathbb{R}$ be the set of real numbers. Determine all functions $f \colon \mathbb{R} \to \mathbb{R}$ such that, for all real numbers $x$ and $y$,
+\[
+f(f(x)f(y)) + f(x + y) = f(xy).
+\]
+
+\bigskip
+
+\textbf{Problem 3.}
+A hunter and an invisible rabbit play a game in the Euclidean plane. The rabbit's starting point, $A_0$, and the hunter's starting point, $B_0$, are the same. After $n - 1$ rounds of the game, the rabbit is at point $A_{n-1}$ and the hunter is at point $B_{n-1}$. In the $n$th round of the game, three things occur in order.
+\begin{enumerate}
+  \item[(i)] The rabbit moves invisibly to a point $A_n$ such that the distance between $A_{n-1}$ and $A_n$ is exactly $1$.
+  \item[(ii)] A tracking device reports a point $P_n$ to the hunter. The only guarantee provided by the tracking device to the hunter is that the distance between $P_n$ and $A_n$ is at most $1$.
+  \item[(iii)] The hunter moves visibly to a point $B_n$ such that the distance between $B_{n-1}$ and $B_n$ is exactly $1$.
+\end{enumerate}
+Is it always possible, no matter how the rabbit moves, and no matter what points are reported by the tracking device, for the hunter to choose her moves so that after $10^9$ rounds she can ensure that the distance between her and the rabbit is at most $100$?
+
+\bigskip
+
+\textbf{Problem 4.}
+Let $R$ and $S$ be different points on a circle $\Omega$ such that $RS$ is not a diameter. Let $\ell$ be the tangent line to $\Omega$ at $R$. Point $T$ is such that $S$ is the midpoint of the line segment $RT$. Point $J$ is chosen on the shorter arc $RS$ of $\Omega$ so that the circumcircle $\Gamma$ of triangle $JST$ intersects $\ell$ at two distinct points. Let $A$ be the common point of $\Gamma$ and $\ell$ that is closer to $R$. Line $AJ$ meets $\Omega$ again at $K$. Prove that the line $KT$ is tangent to $\Gamma$.
+
+\bigskip
+
+\textbf{Problem 5.}
+An integer $N \geq 2$ is given. A collection of $N(N+1)$ soccer players, no two of whom are of the same height, stand in a row. Sir Alex wants to remove $N(N-1)$ players from this row leaving a new row of $2N$ players in which the following $N$ conditions hold:
+\begin{enumerate}
+  \item[(1)] no one stands between the two tallest players,
+  \item[(2)] no one stands between the third and fourth tallest players,
+  \item[] $\vdots$
+  \item[($N$)] no one stands between the two shortest players.
+\end{enumerate}
+Show that this is always possible.
+
+\bigskip
+
+\textbf{Problem 6.}
+An ordered pair $(x, y)$ of integers is a \textit{primitive point} if the greatest common divisor of $x$ and $y$ is $1$. Given a finite set $S$ of primitive points, prove that there exist a positive integer $n$ and integers $a_0, a_1, \ldots, a_n$ such that, for each $(x, y)$ in $S$, we have:
+\[
+a_0 x^n + a_1 x^{n-1} y + a_2 x^{n-2} y^2 + \cdots + a_{n-1} x y^{n-1} + a_n y^n = 1.
+\]
+
+\end{document}
